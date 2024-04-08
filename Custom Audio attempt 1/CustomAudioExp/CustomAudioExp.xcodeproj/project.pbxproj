@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */; };
+		9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */; };
+		9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */; };
+		9D85E7202BC47C0D00FEA9F1 /* EpisodeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71F2BC47C0D00FEA9F1 /* EpisodeView2.swift */; };
+		9D8B36572B9E3BE5005B0C75 /* CustomAudioExpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36562B9E3BE5005B0C75 /* CustomAudioExpApp.swift */; };
+		9D8B36592B9E3BE5005B0C75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36582B9E3BE5005B0C75 /* ContentView.swift */; };
+		9D8B365B2B9E3BE6005B0C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B365A2B9E3BE6005B0C75 /* Assets.xcassets */; };
+		9D8B365E2B9E3BE6005B0C75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B365D2B9E3BE6005B0C75 /* Preview Assets.xcassets */; };
+		9D8B36682B9E3BE6005B0C75 /* CustomAudioExpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36672B9E3BE6005B0C75 /* CustomAudioExpTests.swift */; };
+		9D8B36722B9E3BE6005B0C75 /* CustomAudioExpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36712B9E3BE6005B0C75 /* CustomAudioExpUITests.swift */; };
+		9D8B36742B9E3BE6005B0C75 /* CustomAudioExpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36732B9E3BE6005B0C75 /* CustomAudioExpUITestsLaunchTests.swift */; };
+		9D8B36822B9E3C48005B0C75 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36812B9E3C48005B0C75 /* Episode.swift */; };
+		9D8B36842B9E3C5F005B0C75 /* CatalogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36832B9E3C5F005B0C75 /* CatalogProvider.swift */; };
+		9D8B36862B9E3C75005B0C75 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36852B9E3C75005B0C75 /* Matcher.swift */; };
+		9D8B36882B9E3C8B005B0C75 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36872B9E3C8B005B0C75 /* Recipe.swift */; };
+		9D8B368B2B9E3CB0005B0C75 /* MediaItemProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B368A2B9E3CB0005B0C75 /* MediaItemProperties.swift */; };
+		9D8B368D2B9E3CF2005B0C75 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B368C2B9E3CF2005B0C75 /* Recipes.swift */; };
+		9D8B36922B9E3D5D005B0C75 /* EpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36912B9E3D5D005B0C75 /* EpisodeListView.swift */; };
+		9D8B36942B9E3D8B005B0C75 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36932B9E3D8B005B0C75 /* CardView.swift */; };
+		9D8B36962B9E3D9D005B0C75 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36952B9E3D9D005B0C75 /* BlurView.swift */; };
+		9D8B36992BA08E5D005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */; };
+		9DA98AAD2BA09CE900D7885A /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA98AAC2BA09CE900D7885A /* RecipeView.swift */; };
+		9DA98AAF2BA0A03A00D7885A /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA98AAE2BA0A03A00D7885A /* EpisodeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D8B36642B9E3BE6005B0C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D8B364B2B9E3BE5005B0C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8B36522B9E3BE5005B0C75;
+			remoteInfo = CustomAudioExp;
+		};
+		9D8B366E2B9E3BE6005B0C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D8B364B2B9E3BE5005B0C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8B36522B9E3BE5005B0C75;
+			remoteInfo = CustomAudioExp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenView.swift; sourceTree = "<group>"; };
+		9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView2.swift; sourceTree = "<group>"; };
+		9D85E71F2BC47C0D00FEA9F1 /* EpisodeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView2.swift; sourceTree = "<group>"; };
+		9D8B36532B9E3BE5005B0C75 /* The Hairy Bikers Cook Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Hairy Bikers Cook Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8B36562B9E3BE5005B0C75 /* CustomAudioExpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioExpApp.swift; sourceTree = "<group>"; };
+		9D8B36582B9E3BE5005B0C75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D8B365A2B9E3BE6005B0C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D8B365D2B9E3BE6005B0C75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D8B36632B9E3BE6005B0C75 /* CustomAudioExpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAudioExpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8B36672B9E3BE6005B0C75 /* CustomAudioExpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioExpTests.swift; sourceTree = "<group>"; };
+		9D8B366D2B9E3BE6005B0C75 /* CustomAudioExpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAudioExpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8B36712B9E3BE6005B0C75 /* CustomAudioExpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioExpUITests.swift; sourceTree = "<group>"; };
+		9D8B36732B9E3BE6005B0C75 /* CustomAudioExpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioExpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D8B36812B9E3C48005B0C75 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		9D8B36832B9E3C5F005B0C75 /* CatalogProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogProvider.swift; sourceTree = "<group>"; };
+		9D8B36852B9E3C75005B0C75 /* Matcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
+		9D8B36872B9E3C8B005B0C75 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		9D8B368A2B9E3CB0005B0C75 /* MediaItemProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemProperties.swift; sourceTree = "<group>"; };
+		9D8B368C2B9E3CF2005B0C75 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */ = {isa = PBXFileReference; lastKnownFileType = file; name = TheHairyBikersGoWestS01E01.shazamsignature; path = "../../../Individual Project/Resources/TheHairyBikersGoWestS01E01.shazamsignature"; sourceTree = "<group>"; };
+		9D8B36912B9E3D5D005B0C75 /* EpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListView.swift; sourceTree = "<group>"; };
+		9D8B36932B9E3D8B005B0C75 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9D8B36952B9E3D9D005B0C75 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		9D8B36972B9E40C0005B0C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DA98AAC2BA09CE900D7885A /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		9DA98AAE2BA0A03A00D7885A /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D8B36502B9E3BE5005B0C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8B36602B9E3BE6005B0C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8B366A2B9E3BE6005B0C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D8B364A2B9E3BE5005B0C75 = {
+			isa = PBXGroup;
+			children = (
+				9D8B36902B9E3D4D005B0C75 /* Views */,
+				9D8B368E2B9E3D14005B0C75 /* Resources */,
+				9D8B36892B9E3C94005B0C75 /* Extensions */,
+				9D8B36802B9E3C1A005B0C75 /* Data */,
+				9D8B36552B9E3BE5005B0C75 /* CustomAudioExp */,
+				9D8B36662B9E3BE6005B0C75 /* CustomAudioExpTests */,
+				9D8B36702B9E3BE6005B0C75 /* CustomAudioExpUITests */,
+				9D8B36542B9E3BE5005B0C75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D8B36542B9E3BE5005B0C75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B36532B9E3BE5005B0C75 /* The Hairy Bikers Cook Assistant.app */,
+				9D8B36632B9E3BE6005B0C75 /* CustomAudioExpTests.xctest */,
+				9D8B366D2B9E3BE6005B0C75 /* CustomAudioExpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D8B36552B9E3BE5005B0C75 /* CustomAudioExp */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B36972B9E40C0005B0C75 /* Info.plist */,
+				9D8B36562B9E3BE5005B0C75 /* CustomAudioExpApp.swift */,
+				9D8B36582B9E3BE5005B0C75 /* ContentView.swift */,
+				9D8B365A2B9E3BE6005B0C75 /* Assets.xcassets */,
+				9D8B365C2B9E3BE6005B0C75 /* Preview Content */,
+			);
+			path = CustomAudioExp;
+			sourceTree = "<group>";
+		};
+		9D8B365C2B9E3BE6005B0C75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B365D2B9E3BE6005B0C75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D8B36662B9E3BE6005B0C75 /* CustomAudioExpTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B36672B9E3BE6005B0C75 /* CustomAudioExpTests.swift */,
+			);
+			path = CustomAudioExpTests;
+			sourceTree = "<group>";
+		};
+		9D8B36702B9E3BE6005B0C75 /* CustomAudioExpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B36712B9E3BE6005B0C75 /* CustomAudioExpUITests.swift */,
+				9D8B36732B9E3BE6005B0C75 /* CustomAudioExpUITestsLaunchTests.swift */,
+			);
+			path = CustomAudioExpUITests;
+			sourceTree = "<group>";
+		};
+		9D8B36802B9E3C1A005B0C75 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B36812B9E3C48005B0C75 /* Episode.swift */,
+				9D8B36832B9E3C5F005B0C75 /* CatalogProvider.swift */,
+				9D8B36852B9E3C75005B0C75 /* Matcher.swift */,
+				9D8B36872B9E3C8B005B0C75 /* Recipe.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9D8B36892B9E3C94005B0C75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B368A2B9E3CB0005B0C75 /* MediaItemProperties.swift */,
+				9D8B368C2B9E3CF2005B0C75 /* Recipes.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D8B368E2B9E3D14005B0C75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D8B36902B9E3D4D005B0C75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B36912B9E3D5D005B0C75 /* EpisodeListView.swift */,
+				9D8B36932B9E3D8B005B0C75 /* CardView.swift */,
+				9D8B36952B9E3D9D005B0C75 /* BlurView.swift */,
+				9DA98AAC2BA09CE900D7885A /* RecipeView.swift */,
+				9DA98AAE2BA0A03A00D7885A /* EpisodeView.swift */,
+				9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */,
+				9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */,
+				9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */,
+				9D85E71F2BC47C0D00FEA9F1 /* EpisodeView2.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D8B36522B9E3BE5005B0C75 /* CustomAudioExp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D8B36772B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExp" */;
+			buildPhases = (
+				9D8B364F2B9E3BE5005B0C75 /* Sources */,
+				9D8B36502B9E3BE5005B0C75 /* Frameworks */,
+				9D8B36512B9E3BE5005B0C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomAudioExp;
+			productName = CustomAudioExp;
+			productReference = 9D8B36532B9E3BE5005B0C75 /* The Hairy Bikers Cook Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D8B36622B9E3BE6005B0C75 /* CustomAudioExpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D8B367A2B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExpTests" */;
+			buildPhases = (
+				9D8B365F2B9E3BE6005B0C75 /* Sources */,
+				9D8B36602B9E3BE6005B0C75 /* Frameworks */,
+				9D8B36612B9E3BE6005B0C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D8B36652B9E3BE6005B0C75 /* PBXTargetDependency */,
+			);
+			name = CustomAudioExpTests;
+			productName = CustomAudioExpTests;
+			productReference = 9D8B36632B9E3BE6005B0C75 /* CustomAudioExpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D8B366C2B9E3BE6005B0C75 /* CustomAudioExpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D8B367D2B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExpUITests" */;
+			buildPhases = (
+				9D8B36692B9E3BE6005B0C75 /* Sources */,
+				9D8B366A2B9E3BE6005B0C75 /* Frameworks */,
+				9D8B366B2B9E3BE6005B0C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D8B366F2B9E3BE6005B0C75 /* PBXTargetDependency */,
+			);
+			name = CustomAudioExpUITests;
+			productName = CustomAudioExpUITests;
+			productReference = 9D8B366D2B9E3BE6005B0C75 /* CustomAudioExpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D8B364B2B9E3BE5005B0C75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9D8B36522B9E3BE5005B0C75 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9D8B36622B9E3BE6005B0C75 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9D8B36522B9E3BE5005B0C75;
+					};
+					9D8B366C2B9E3BE6005B0C75 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9D8B36522B9E3BE5005B0C75;
+					};
+				};
+			};
+			buildConfigurationList = 9D8B364E2B9E3BE5005B0C75 /* Build configuration list for PBXProject "CustomAudioExp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D8B364A2B9E3BE5005B0C75;
+			productRefGroup = 9D8B36542B9E3BE5005B0C75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D8B36522B9E3BE5005B0C75 /* CustomAudioExp */,
+				9D8B36622B9E3BE6005B0C75 /* CustomAudioExpTests */,
+				9D8B366C2B9E3BE6005B0C75 /* CustomAudioExpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D8B36512B9E3BE5005B0C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8B365E2B9E3BE6005B0C75 /* Preview Assets.xcassets in Resources */,
+				9D8B365B2B9E3BE6005B0C75 /* Assets.xcassets in Resources */,
+				9D8B36992BA08E5D005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8B36612B9E3BE6005B0C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8B366B2B9E3BE6005B0C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D8B364F2B9E3BE5005B0C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8B368B2B9E3CB0005B0C75 /* MediaItemProperties.swift in Sources */,
+				9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */,
+				9D8B36592B9E3BE5005B0C75 /* ContentView.swift in Sources */,
+				9D8B36822B9E3C48005B0C75 /* Episode.swift in Sources */,
+				9DA98AAF2BA0A03A00D7885A /* EpisodeView.swift in Sources */,
+				9D8B368D2B9E3CF2005B0C75 /* Recipes.swift in Sources */,
+				9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */,
+				9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */,
+				9D8B36962B9E3D9D005B0C75 /* BlurView.swift in Sources */,
+				9D8B36942B9E3D8B005B0C75 /* CardView.swift in Sources */,
+				9DA98AAD2BA09CE900D7885A /* RecipeView.swift in Sources */,
+				9D8B36842B9E3C5F005B0C75 /* CatalogProvider.swift in Sources */,
+				9D85E7202BC47C0D00FEA9F1 /* EpisodeView2.swift in Sources */,
+				9D8B36922B9E3D5D005B0C75 /* EpisodeListView.swift in Sources */,
+				9D8B36882B9E3C8B005B0C75 /* Recipe.swift in Sources */,
+				9D8B36862B9E3C75005B0C75 /* Matcher.swift in Sources */,
+				9D8B36572B9E3BE5005B0C75 /* CustomAudioExpApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8B365F2B9E3BE6005B0C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8B36682B9E3BE6005B0C75 /* CustomAudioExpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8B36692B9E3BE6005B0C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8B36742B9E3BE6005B0C75 /* CustomAudioExpUITestsLaunchTests.swift in Sources */,
+				9D8B36722B9E3BE6005B0C75 /* CustomAudioExpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D8B36652B9E3BE6005B0C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D8B36522B9E3BE5005B0C75 /* CustomAudioExp */;
+			targetProxy = 9D8B36642B9E3BE6005B0C75 /* PBXContainerItemProxy */;
+		};
+		9D8B366F2B9E3BE6005B0C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D8B36522B9E3BE5005B0C75 /* CustomAudioExp */;
+			targetProxy = 9D8B366E2B9E3BE6005B0C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D8B36752B9E3BE6005B0C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D8B36762B9E3BE6005B0C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D8B36782B9E3BE6005B0C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAudioExp/Preview Content\"";
+				DEVELOPMENT_TEAM = R9XJ622U85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomAudioExp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to microphone";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fontys.HairyBikers;
+				PRODUCT_NAME = "The Hairy Bikers Cook Assistant";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D8B36792B9E3BE6005B0C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAudioExp/Preview Content\"";
+				DEVELOPMENT_TEAM = R9XJ622U85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomAudioExp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to microphone";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fontys.HairyBikers;
+				PRODUCT_NAME = "The Hairy Bikers Cook Assistant";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D8B367B2B9E3BE6005B0C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPSWAT7Z64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mihail.CustomAudioExpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomAudioExp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomAudioExp";
+			};
+			name = Debug;
+		};
+		9D8B367C2B9E3BE6005B0C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPSWAT7Z64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mihail.CustomAudioExpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomAudioExp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomAudioExp";
+			};
+			name = Release;
+		};
+		9D8B367E2B9E3BE6005B0C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPSWAT7Z64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mihail.CustomAudioExpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomAudioExp;
+			};
+			name = Debug;
+		};
+		9D8B367F2B9E3BE6005B0C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPSWAT7Z64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mihail.CustomAudioExpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomAudioExp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D8B364E2B9E3BE5005B0C75 /* Build configuration list for PBXProject "CustomAudioExp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D8B36752B9E3BE6005B0C75 /* Debug */,
+				9D8B36762B9E3BE6005B0C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D8B36772B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D8B36782B9E3BE6005B0C75 /* Debug */,
+				9D8B36792B9E3BE6005B0C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D8B367A2B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D8B367B2B9E3BE6005B0C75 /* Debug */,
+				9D8B367C2B9E3BE6005B0C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D8B367D2B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D8B367E2B9E3BE6005B0C75 /* Debug */,
+				9D8B367F2B9E3BE6005B0C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D8B364B2B9E3BE5005B0C75 /* Project object */;
+}
