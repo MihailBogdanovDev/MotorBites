@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A93246FB93D5070A6B25A58 /* Pods_CustomAudioExpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B4A7786974F7058E03B8DA /* Pods_CustomAudioExpTests.framework */; };
+		357E33739E7F0E9C2159EEFC /* Pods_CustomAudioExp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4E66F463C7719B5143EAAB /* Pods_CustomAudioExp.framework */; };
+		7DA7CC815F58CB831E11CB05 /* Pods_CustomAudioExp_CustomAudioExpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260341D0DD46EACB8F057B2B /* Pods_CustomAudioExp_CustomAudioExpUITests.framework */; };
+		9D02945B2BD41E47002B73F1 /* lambSfiha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D02945A2BD41E47002B73F1 /* lambSfiha.jpg */; };
+		9D02945D2BD421C0002B73F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D02945C2BD421C0002B73F1 /* GoogleService-Info.plist */; };
+		9D0294602BD4227A002B73F1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9D02945F2BD4227A002B73F1 /* FirebaseAnalytics */; };
+		9D21B9832BD6CCA10089D9F7 /* Listens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21B9822BD6CCA10089D9F7 /* Listens.swift */; };
+		9D21B9852BD6F64A0089D9F7 /* MyRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */; };
 		9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */; };
 		9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */; };
 		9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */; };
@@ -28,8 +36,8 @@
 		9D8B36942B9E3D8B005B0C75 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36932B9E3D8B005B0C75 /* CardView.swift */; };
 		9D8B36962B9E3D9D005B0C75 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36952B9E3D9D005B0C75 /* BlurView.swift */; };
 		9D8B36992BA08E5D005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */; };
-		9DA98AAD2BA09CE900D7885A /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA98AAC2BA09CE900D7885A /* RecipeView.swift */; };
-		9DA98AAF2BA0A03A00D7885A /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA98AAE2BA0A03A00D7885A /* EpisodeView.swift */; };
+		9DA35E2D2BD562B500825D59 /* StorageUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA35E2C2BD562B500825D59 /* StorageUIImage.swift */; };
+		9DBBBD3A2BD5A7B0006845EB /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBBBD392BD5A7B0006845EB /* FirebaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260341D0DD46EACB8F057B2B /* Pods_CustomAudioExp_CustomAudioExpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAudioExp_CustomAudioExpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43070079D41C1358E9F59633 /* Pods-CustomAudioExpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAudioExpTests.release.xcconfig"; path = "Target Support Files/Pods-CustomAudioExpTests/Pods-CustomAudioExpTests.release.xcconfig"; sourceTree = "<group>"; };
+		81FF9CBF9B9030C7C6A0FD19 /* Pods-CustomAudioExp-CustomAudioExpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAudioExp-CustomAudioExpUITests.release.xcconfig"; path = "Target Support Files/Pods-CustomAudioExp-CustomAudioExpUITests/Pods-CustomAudioExp-CustomAudioExpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		85B4A7786974F7058E03B8DA /* Pods_CustomAudioExpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAudioExpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D02945A2BD41E47002B73F1 /* lambSfiha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lambSfiha.jpg; sourceTree = "<group>"; };
+		9D02945C2BD421C0002B73F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D21B9822BD6CCA10089D9F7 /* Listens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listens.swift; sourceTree = "<group>"; };
+		9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipesView.swift; sourceTree = "<group>"; };
 		9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenView.swift; sourceTree = "<group>"; };
 		9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView2.swift; sourceTree = "<group>"; };
@@ -75,8 +91,13 @@
 		9D8B36932B9E3D8B005B0C75 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9D8B36952B9E3D9D005B0C75 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		9D8B36972B9E40C0005B0C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		9DA98AAC2BA09CE900D7885A /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
-		9DA98AAE2BA0A03A00D7885A /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+		9DA35E2C2BD562B500825D59 /* StorageUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUIImage.swift; sourceTree = "<group>"; };
+		9DBBBD392BD5A7B0006845EB /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		BEC14A632076B6A1F308D8CC /* Pods-CustomAudioExp-CustomAudioExpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAudioExp-CustomAudioExpUITests.debug.xcconfig"; path = "Target Support Files/Pods-CustomAudioExp-CustomAudioExpUITests/Pods-CustomAudioExp-CustomAudioExpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2A5BFA9DCD7CBA91F6EBE84 /* Pods-CustomAudioExpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAudioExpTests.debug.xcconfig"; path = "Target Support Files/Pods-CustomAudioExpTests/Pods-CustomAudioExpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB4E66F463C7719B5143EAAB /* Pods_CustomAudioExp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAudioExp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9109B5539F5D7E89EFEB517 /* Pods-CustomAudioExp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAudioExp.debug.xcconfig"; path = "Target Support Files/Pods-CustomAudioExp/Pods-CustomAudioExp.debug.xcconfig"; sourceTree = "<group>"; };
+		FEFB0E4DE33F58302D96746C /* Pods-CustomAudioExp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAudioExp.release.xcconfig"; path = "Target Support Files/Pods-CustomAudioExp/Pods-CustomAudioExp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0294602BD4227A002B73F1 /* FirebaseAnalytics in Frameworks */,
+				357E33739E7F0E9C2159EEFC /* Pods_CustomAudioExp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A93246FB93D5070A6B25A58 /* Pods_CustomAudioExpTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA7CC815F58CB831E11CB05 /* Pods_CustomAudioExp_CustomAudioExpUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +132,7 @@
 		9D8B364A2B9E3BE5005B0C75 = {
 			isa = PBXGroup;
 			children = (
+				9DBBBD342BD58555006845EB /* Services */,
 				9D8B36902B9E3D4D005B0C75 /* Views */,
 				9D8B368E2B9E3D14005B0C75 /* Resources */,
 				9D8B36892B9E3C94005B0C75 /* Extensions */,
@@ -115,6 +141,8 @@
 				9D8B36662B9E3BE6005B0C75 /* CustomAudioExpTests */,
 				9D8B36702B9E3BE6005B0C75 /* CustomAudioExpUITests */,
 				9D8B36542B9E3BE5005B0C75 /* Products */,
+				AA6619217617EF0754358E68 /* Pods */,
+				E31EE370099400B05AE4498B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +159,7 @@
 		9D8B36552B9E3BE5005B0C75 /* CustomAudioExp */ = {
 			isa = PBXGroup;
 			children = (
+				9D02945C2BD421C0002B73F1 /* GoogleService-Info.plist */,
 				9D8B36972B9E40C0005B0C75 /* Info.plist */,
 				9D8B36562B9E3BE5005B0C75 /* CustomAudioExpApp.swift */,
 				9D8B36582B9E3BE5005B0C75 /* ContentView.swift */,
@@ -172,6 +201,7 @@
 				9D8B36832B9E3C5F005B0C75 /* CatalogProvider.swift */,
 				9D8B36852B9E3C75005B0C75 /* Matcher.swift */,
 				9D8B36872B9E3C8B005B0C75 /* Recipe.swift */,
+				9D21B9822BD6CCA10089D9F7 /* Listens.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -188,6 +218,7 @@
 		9D8B368E2B9E3D14005B0C75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9D02945A2BD41E47002B73F1 /* lambSfiha.jpg */,
 				9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */,
 			);
 			path = Resources;
@@ -199,14 +230,45 @@
 				9D8B36912B9E3D5D005B0C75 /* EpisodeListView.swift */,
 				9D8B36932B9E3D8B005B0C75 /* CardView.swift */,
 				9D8B36952B9E3D9D005B0C75 /* BlurView.swift */,
-				9DA98AAC2BA09CE900D7885A /* RecipeView.swift */,
-				9DA98AAE2BA0A03A00D7885A /* EpisodeView.swift */,
 				9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */,
 				9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */,
 				9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */,
 				9D85E71F2BC47C0D00FEA9F1 /* EpisodeView2.swift */,
+				9DA35E2C2BD562B500825D59 /* StorageUIImage.swift */,
+				9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9DBBBD342BD58555006845EB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9DBBBD392BD5A7B0006845EB /* FirebaseHelper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA6619217617EF0754358E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9109B5539F5D7E89EFEB517 /* Pods-CustomAudioExp.debug.xcconfig */,
+				FEFB0E4DE33F58302D96746C /* Pods-CustomAudioExp.release.xcconfig */,
+				BEC14A632076B6A1F308D8CC /* Pods-CustomAudioExp-CustomAudioExpUITests.debug.xcconfig */,
+				81FF9CBF9B9030C7C6A0FD19 /* Pods-CustomAudioExp-CustomAudioExpUITests.release.xcconfig */,
+				C2A5BFA9DCD7CBA91F6EBE84 /* Pods-CustomAudioExpTests.debug.xcconfig */,
+				43070079D41C1358E9F59633 /* Pods-CustomAudioExpTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E31EE370099400B05AE4498B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB4E66F463C7719B5143EAAB /* Pods_CustomAudioExp.framework */,
+				260341D0DD46EACB8F057B2B /* Pods_CustomAudioExp_CustomAudioExpUITests.framework */,
+				85B4A7786974F7058E03B8DA /* Pods_CustomAudioExpTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,15 +278,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D8B36772B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExp" */;
 			buildPhases = (
+				D97E6C2A88AD052EB24F8090 /* [CP] Check Pods Manifest.lock */,
 				9D8B364F2B9E3BE5005B0C75 /* Sources */,
 				9D8B36502B9E3BE5005B0C75 /* Frameworks */,
 				9D8B36512B9E3BE5005B0C75 /* Resources */,
+				25E13AF22ABFB4D098C8DBDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CustomAudioExp;
+			packageProductDependencies = (
+				9D02945F2BD4227A002B73F1 /* FirebaseAnalytics */,
+			);
 			productName = CustomAudioExp;
 			productReference = 9D8B36532B9E3BE5005B0C75 /* The Hairy Bikers Cook Assistant.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +300,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D8B367A2B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExpTests" */;
 			buildPhases = (
+				D8F24F959A6A6C8711475C85 /* [CP] Check Pods Manifest.lock */,
 				9D8B365F2B9E3BE6005B0C75 /* Sources */,
 				9D8B36602B9E3BE6005B0C75 /* Frameworks */,
 				9D8B36612B9E3BE6005B0C75 /* Resources */,
@@ -251,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D8B367D2B9E3BE6005B0C75 /* Build configuration list for PBXNativeTarget "CustomAudioExpUITests" */;
 			buildPhases = (
+				0974E81318894C1880BFD224 /* [CP] Check Pods Manifest.lock */,
 				9D8B36692B9E3BE6005B0C75 /* Sources */,
 				9D8B366A2B9E3BE6005B0C75 /* Frameworks */,
 				9D8B366B2B9E3BE6005B0C75 /* Resources */,
+				7DF4C231847CAF9F793C04DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +367,9 @@
 				Base,
 			);
 			mainGroup = 9D8B364A2B9E3BE5005B0C75;
+			packageReferences = (
+				9D02945E2BD4227A002B73F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9D8B36542B9E3BE5005B0C75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,7 +386,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D02945B2BD41E47002B73F1 /* lambSfiha.jpg in Resources */,
 				9D8B365E2B9E3BE6005B0C75 /* Preview Assets.xcassets in Resources */,
+				9D02945D2BD421C0002B73F1 /* GoogleService-Info.plist in Resources */,
 				9D8B365B2B9E3BE6005B0C75 /* Assets.xcassets in Resources */,
 				9D8B36992BA08E5D005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */,
 			);
@@ -335,6 +410,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0974E81318894C1880BFD224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAudioExp-CustomAudioExpUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25E13AF22ABFB4D098C8DBDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAudioExp/Pods-CustomAudioExp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAudioExp/Pods-CustomAudioExp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomAudioExp/Pods-CustomAudioExp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF4C231847CAF9F793C04DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAudioExp-CustomAudioExpUITests/Pods-CustomAudioExp-CustomAudioExpUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAudioExp-CustomAudioExpUITests/Pods-CustomAudioExp-CustomAudioExpUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomAudioExp-CustomAudioExpUITests/Pods-CustomAudioExp-CustomAudioExpUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F24F959A6A6C8711475C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAudioExpTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97E6C2A88AD052EB24F8090 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAudioExp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D8B364F2B9E3BE5005B0C75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -342,16 +520,18 @@
 			files = (
 				9D8B368B2B9E3CB0005B0C75 /* MediaItemProperties.swift in Sources */,
 				9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */,
+				9DBBBD3A2BD5A7B0006845EB /* FirebaseHelper.swift in Sources */,
 				9D8B36592B9E3BE5005B0C75 /* ContentView.swift in Sources */,
 				9D8B36822B9E3C48005B0C75 /* Episode.swift in Sources */,
-				9DA98AAF2BA0A03A00D7885A /* EpisodeView.swift in Sources */,
 				9D8B368D2B9E3CF2005B0C75 /* Recipes.swift in Sources */,
+				9DA35E2D2BD562B500825D59 /* StorageUIImage.swift in Sources */,
 				9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */,
+				9D21B9832BD6CCA10089D9F7 /* Listens.swift in Sources */,
 				9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */,
 				9D8B36962B9E3D9D005B0C75 /* BlurView.swift in Sources */,
 				9D8B36942B9E3D8B005B0C75 /* CardView.swift in Sources */,
-				9DA98AAD2BA09CE900D7885A /* RecipeView.swift in Sources */,
 				9D8B36842B9E3C5F005B0C75 /* CatalogProvider.swift in Sources */,
+				9D21B9852BD6F64A0089D9F7 /* MyRecipesView.swift in Sources */,
 				9D85E7202BC47C0D00FEA9F1 /* EpisodeView2.swift in Sources */,
 				9D8B36922B9E3D5D005B0C75 /* EpisodeListView.swift in Sources */,
 				9D8B36882B9E3C8B005B0C75 /* Recipe.swift in Sources */,
@@ -430,7 +610,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -493,7 +673,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -514,17 +694,18 @@
 		};
 		9D8B36782B9E3BE6005B0C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9109B5539F5D7E89EFEB517 /* Pods-CustomAudioExp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CustomAudioExp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Resources/lambSfiha.jpg CustomAudioExp/Preview\\ Content";
 				DEVELOPMENT_TEAM = R9XJ622U85;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomAudioExp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Motor Bites";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to microphone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -547,17 +728,18 @@
 		};
 		9D8B36792B9E3BE6005B0C75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEFB0E4DE33F58302D96746C /* Pods-CustomAudioExp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CustomAudioExp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Resources/lambSfiha.jpg CustomAudioExp/Preview\\ Content";
 				DEVELOPMENT_TEAM = R9XJ622U85;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomAudioExp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Motor Bites";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to microphone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -580,6 +762,7 @@
 		};
 		9D8B367B2B9E3BE6005B0C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A5BFA9DCD7CBA91F6EBE84 /* Pods-CustomAudioExpTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -600,6 +783,7 @@
 		};
 		9D8B367C2B9E3BE6005B0C75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43070079D41C1358E9F59633 /* Pods-CustomAudioExpTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,6 +804,7 @@
 		};
 		9D8B367E2B9E3BE6005B0C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC14A632076B6A1F308D8CC /* Pods-CustomAudioExp-CustomAudioExpUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -638,6 +823,7 @@
 		};
 		9D8B367F2B9E3BE6005B0C75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FF9CBF9B9030C7C6A0FD19 /* Pods-CustomAudioExp-CustomAudioExpUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -694,6 +880,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D02945E2BD4227A002B73F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D02945F2BD4227A002B73F1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D02945E2BD4227A002B73F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D8B364B2B9E3BE5005B0C75 /* Project object */;
 }

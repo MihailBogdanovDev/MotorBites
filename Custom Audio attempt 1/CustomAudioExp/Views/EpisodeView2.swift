@@ -1,4 +1,5 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct EpisodeView1: View {
     let currentEpisode: Episode?
@@ -7,21 +8,29 @@ struct EpisodeView1: View {
     let otherRecipes: [Recipe] // Replace with your actual data source
 
     var body: some View {
-        NavigationView {
             ZStack {
                 // Background
                 Color.black.edgesIgnoringSafeArea(.all)
                 
                 // Scrollable content
                 ScrollView {
+                    
                     VStack(alignment: .leading) {
+                        NavigationLink(destination: ListenView(currentEpisode: nil)) {
+                            Text("Back")
+                                .foregroundColor(.white)
+                                .padding()
+                        } 
+
                         // Episode Image Placeholder
-                        GeometryReader { geo in
-                            Rectangle()
-                                .fill(Color.gray.opacity(0.3))
-                                .frame(width: geo.size.width, height: geo.size.height)
-                        }
-                        .frame(height: 200)
+                        WebImage(url: URL(string: "https://firebasestorage.googleapis.com/v0/b/motorbites-1a543.appspot.com/o/hbgw_fbtwitter_post_tx.jpg?alt=media&token=516117b2-0b59-488b-bdc6-4b0fc4effe80"))
+                               .resizable()
+                               .indicator(.activity) // Activity indicator while loading
+                               .transition(.fade(duration: 0.5)) // Fade Transition with duration
+                               .aspectRatio(contentMode: .fill) // Maintain the aspect ratio and fill the frame
+                               .frame(maxWidth: 380) // Use the maximum width available
+                               .frame(height: 300) // Set a fixed height
+                               .clipped()
                         
                         // Episode Title
                         Text(currentEpisode?.title ?? "E1") // Replace with your episode title variable
@@ -96,19 +105,20 @@ struct EpisodeView1: View {
                     }
                 }
             }
+
         }
     }
-}
+
 
 // Dummy data for previews
 let sampleRecipe = Recipe(
     title: "Lamb Sfiha",
     offset: 1234,
-    link: URL(string: "https://example.com")!,
     time: "1h30m",
     budget: 20.00,
     description: "Delicious Middle Eastern pie.",
-    ingridients: ["Lamb", "Onion", "Pine Nuts"]
+    ingridients: ["Lamb", "Onion", "Pine Nuts"],
+    imageURL: URL(string: "gs://motorbites-1a543.appspot.com/syrian_flatbread_pizza_22452_16x9.jpg")!
 )
 
 struct EpisodeView1_Previews: PreviewProvider {

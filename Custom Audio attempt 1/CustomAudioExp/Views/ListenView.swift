@@ -1,9 +1,14 @@
 import SwiftUI
+import SDWebImageSwiftUI
+import ShazamKit
 
 struct ListenView: View {
 
+    @EnvironmentObject var matcher: Matcher
     let currentEpisode: Episode?
-
+    
+    @State private var isListening = false
+     @State private var animationAmount = 0.0
     
     // Initial state is set to be offscreen
    @State var searchText = ""
@@ -21,7 +26,7 @@ struct ListenView: View {
                     listenedRecipes: [sampleRecipe],
                     otherRecipes: [sampleRecipe]
                 )
-
+                
             }
             else{
                 // Background
@@ -31,7 +36,8 @@ struct ListenView: View {
                 VStack {
                     Spacer()
                     Button(action: {
-                        // Action to perform on button tap
+                       toggleListening()
+                        
                     }) {
                         Image(systemName: "waveform.path.ecg") // Replace with your own custom image
                             .font(.system(size: 50))
@@ -41,7 +47,10 @@ struct ListenView: View {
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.gray, lineWidth: 1))
                             .shadow(color: .gray, radius: 10, x: 0, y: 4)
+                            .scaleEffect(isListening ? 1.1 : 1.0) // Make the button a bit larger when listening
+                            .rotationEffect(.degrees(animationAmount)) // Rotate button when listening
                     }
+                    
                     Text("Tap to Shazam")
                         .foregroundColor(.white)
                         .padding(.top, 20)
@@ -106,9 +115,40 @@ struct ListenView: View {
                 }.ignoresSafeArea(.all, edges: .bottom)
                 
             }
-            }
+            
+        }
        
     }
+    
+    func toggleListening() {
+           if isListening {
+               matcher.stopListening()
+               stopAnimation()
+           } else {
+               do {
+                   if let catalog = try CatalogProvider.catalog() {
+                       try matcher.match(catalog: catalog)
+                   }
+               } catch {
+                   print(error)
+               }
+               startAnimation()
+           }
+           isListening.toggle()
+       }
+       
+       func startAnimation() {
+           withAnimation(Animation.linear(duration: 2).repeatForever(autoreverses: false)) {
+               animationAmount = 360
+           }
+       }
+       
+       func stopAnimation() {
+           withAnimation {
+               animationAmount = 0
+           }
+       }
+    
     func onChange(){
         DispatchQueue.main.async {
             self.offset = gestureOffset + lastOffset
@@ -156,19 +196,24 @@ struct HeaderView: View {
 }
 
 struct ContentListView: View {
+    @EnvironmentObject var matcher: Matcher
+
     var body: some View {
         VStack {
-            HStack {
-                Image(systemName: "fork.knife")
-                    .foregroundColor(.blue)
-                Text("My recipes")
-                Spacer()
-                Text("50")
-                    .foregroundColor(.gray)
-                Image(systemName: "chevron.right")
-                    .foregroundColor(.gray)
+            NavigationLink(destination: RecipesListView(matcher: matcher)) {
+                HStack {
+                    Image(systemName: "fork.knife")
+                        .foregroundColor(.blue)
+                    Text("My recipes")
+                    Spacer()
+                    Text(matcher.listens.recipes.count.description)
+                        .foregroundColor(.gray)
+                    Image(systemName: "chevron.right")
+                        .foregroundColor(.gray)
+                }
+                .padding()
             }
-            .padding()
+           
         }
         .foregroundColor(.white)
         .background(Color.black)
@@ -176,20 +221,22 @@ struct ContentListView: View {
 }
 
 struct RecentShazamsView: View {
+    @EnvironmentObject var matcher: Matcher
     // Placeholder for recent shazam items
-    let items = ["S1E1", "S1E2", "S1E3", "S1E4", "S1E5", "S1E6"]
+    //let items = ["S1E1", "S1E2", "S1E3", "S1E4", "S1E5", "S1E6"]
     
     // This calculates the number of rows needed based on item count
-    private var rowCount: Int {
-        return (items.count + 1) / 2
-    }
+    private func rowCount(items: [Episode]) -> Int {
+          return (items.count + 1) / 2
+      }
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
+            let items = matcher.listens.episodes
             // Use a VStack to arrange rows vertically
             VStack {
                 // Create rows
-                ForEach(0..<rowCount, id: \.self) { rowIndex in
+                ForEach(0..<rowCount(items: items), id: \.self) { rowIndex in
                     HStack(spacing: 10) {
                         // Place two items per row
                         ForEach(0..<2, id: \.self) { columnIndex in
@@ -210,22 +257,30 @@ struct RecentShazamsView: View {
 
 // Card view for a shazam item
 struct ShazamCardView: View {
-    let item: String
-    
+    @EnvironmentObject var matcher: Matcher
+    //let item: String
+    let item: Episode
     var body: some View {
         VStack {
-            Rectangle() // Replace with actual album artwork
-                .fill(Color.blue)
+            WebImage(url: URL(string: "https://firebasestorage.googleapis.com/v0/b/motorbites-1a543.appspot.com/o/hbgw_fbtwitter_post_tx.jpg?alt=media&token=516117b2-0b59-488b-bdc6-4b0fc4effe80"))
+                .resizable()
                 .frame(width: 150, height: 150)
                 .cornerRadius(10)
             
-            Text(item)
+            Text(item.title)
                 .foregroundColor(.white)
                 .padding([.top, .horizontal])
             
-            Button("View") {
-                // Action to play the shazam item
-            }
+                NavigationLink(destination: EpisodeView1(
+                    currentEpisode: item,
+                    listenedRecipes: matcher.listens.recipes,
+                    otherRecipes: Recipe.allRecipes
+                ))
+            {
+                        
+                Text("View")
+                   
+                }
             .foregroundColor(.white)
             .padding(.bottom)
         }

@@ -1,0 +1,6 @@
+framework module Pods_CustomAudioExp {
+  umbrella header "Pods-CustomAudioExp-umbrella.h"
+
+  export *
+  module * { export * }
+}
