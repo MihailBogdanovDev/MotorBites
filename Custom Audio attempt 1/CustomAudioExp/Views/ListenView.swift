@@ -68,9 +68,8 @@ struct ListenView: View {
                     return AnyView(
                         
                         ZStack{
-                            BlurView(style: .systemUltraThinMaterialDark)
+                            Color(hex: "2743A6") // Changed to solid color
                                 .clipShape(CustomCorner(corners: [.topLeft, .topRight], radius: 30))
-                            
                             VStack{
                                 Capsule()
                                     .fill(Color.white)

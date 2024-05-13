@@ -17,6 +17,7 @@
 		9D21B9852BD6F64A0089D9F7 /* MyRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */; };
 		9D6B75F52BF24968001CAC28 /* HairyBikersLogo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B75F42BF24967001CAC28 /* HairyBikersLogo.svg */; };
 		9D6B75F72BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B75F62BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature */; };
+		9D6B75FB2BF26723001CAC28 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B75FA2BF26723001CAC28 /* Color.swift */; };
 		9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */; };
 		9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */; };
 		9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */; };
@@ -69,6 +70,7 @@
 		9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipesView.swift; sourceTree = "<group>"; };
 		9D6B75F42BF24967001CAC28 /* HairyBikersLogo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HairyBikersLogo.svg; sourceTree = "<group>"; };
 		9D6B75F62BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheHairyBikersGoWestS01E01.shazamsignature; sourceTree = "<group>"; };
+		9D6B75FA2BF26723001CAC28 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenView.swift; sourceTree = "<group>"; };
 		9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView2.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			children = (
 				9D8B368A2B9E3CB0005B0C75 /* MediaItemProperties.swift */,
 				9D8B368C2B9E3CF2005B0C75 /* Recipes.swift */,
+				9D6B75FA2BF26723001CAC28 /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				9D8B36962B9E3D9D005B0C75 /* BlurView.swift in Sources */,
 				9D8B36942B9E3D8B005B0C75 /* CardView.swift in Sources */,
 				9D8B36842B9E3C5F005B0C75 /* CatalogProvider.swift in Sources */,
+				9D6B75FB2BF26723001CAC28 /* Color.swift in Sources */,
 				9D21B9852BD6F64A0089D9F7 /* MyRecipesView.swift in Sources */,
 				9D85E7202BC47C0D00FEA9F1 /* EpisodeView2.swift in Sources */,
 				9D8B36922B9E3D5D005B0C75 /* EpisodeListView.swift in Sources */,
