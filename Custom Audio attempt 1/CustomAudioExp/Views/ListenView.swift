@@ -267,7 +267,7 @@ struct ShazamCardView: View {
                 .cornerRadius(10)
             
             Text(item.title)
-                .foregroundColor(.white)
+                .foregroundColor(.black)
                 .padding([.top, .horizontal])
             
                 NavigationLink(destination: EpisodeView1(
@@ -280,10 +280,10 @@ struct ShazamCardView: View {
                 Text("View")
                    
                 }
-            .foregroundColor(.white)
+            .foregroundColor(.black)
             .padding(.bottom)
         }
-        .background(Color.red)
+        .background(Color.white)
         .cornerRadius(10)
         .frame(width: 150, height: 250)
     }

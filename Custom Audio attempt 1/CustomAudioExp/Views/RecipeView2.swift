@@ -5,11 +5,13 @@ import SDWebImageSwiftUI
 
 struct RecipeView: View {
     let recipe: Recipe
+    @State private var showCookingGuide = false // State to control navigation
+
     
     var body: some View {
         ZStack {
             // Background
-            Color.black.edgesIgnoringSafeArea(.all)
+            Color(hex: "2743A6").edgesIgnoringSafeArea(.all)
             
             ScrollView {
                 // Content
@@ -57,7 +59,7 @@ struct RecipeView: View {
                             // Ingredients List
                             ForEach(recipe.ingridients, id: \.self) { ingredient in
                                 Text(ingredient)
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(.white)
                                     .padding(.vertical, 2)
                             }
                         }
@@ -67,18 +69,22 @@ struct RecipeView: View {
                         
                         // Cook Button
                         Button(action: {
-                            // Action for cook button
+                            showCookingGuide = true
                         }) {
                             Text("Cook")
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 50)
-                                .foregroundColor(.white)
-                                .background(Color.gray)
+                                .foregroundColor(.black)
+                                .background(Color.white)
                                 .cornerRadius(10)
                         }
                         .padding(.horizontal)
                         .padding(.bottom, 20)
                     }
+                    .sheet(isPresented: $showCookingGuide) {
+                                // Pass the steps to the CookingGuideView
+                                CookingGuideView(steps: recipe.steps)
+                            }
                 }
             }
         }
@@ -88,7 +94,7 @@ struct RecipeView: View {
     struct RecipeView_Previews: PreviewProvider {
         static var previews: some View {
             RecipeView(recipe:  Recipe(title: "Lamb Sfiha", offset: 1184, time: "1h30m", budget: 30.23, description: "aaa", ingridients: ["Example Ing", "Example Ing", "Example Ing", "Example Ing", "Example Ing", "Example Ing", "Example Ing","Example Ing", "Example Ing", "Example Ing", "Example Ing", "Example Ing", "Example Ing", "Example Ing"],imageURL: (URL(string: "https://firebasestorage.googleapis.com/v0/b/motorbites-1a543.appspot.com/o/syrian_flatbread_pizza_22452_16x9.jpg?alt=media&token=d6b95e12-46a8-478e-ad42-160aa150f98c"
-) ?? URL(string: "www.google.com"))!)
+                                                                                                                                                                                                                                                                                                                                                                ) ?? URL(string: "www.google.com"))!, steps: CookingStep.allCookingSteps)
             )}
     }
 

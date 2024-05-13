@@ -10,9 +10,10 @@ struct Recipe:  Equatable, Comparable, Decodable, Hashable, Identifiable {
     let description: String
     let ingridients: [String]
     let imageURL: URL
+    let steps: [CookingStep]
     
     
-    init( title: String, offset: TimeInterval, time: String, budget: Double, description: String, ingridients: [String], imageURL: URL) {
+    init( title: String, offset: TimeInterval, time: String, budget: Double, description: String, ingridients: [String], imageURL: URL, steps: [CookingStep]) {
         self.title = title
         self.offset = offset
         self.time = time
@@ -20,6 +21,7 @@ struct Recipe:  Equatable, Comparable, Decodable, Hashable, Identifiable {
         self.description = description
         self.ingridients = ingridients
         self.imageURL = imageURL
+        self.steps = steps
     }
     
     static func < (lhs: Recipe, rhs: Recipe) -> Bool {

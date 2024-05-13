@@ -11,18 +11,25 @@ struct RecipesListView: View {
       
     
     var body: some View {
-        
-        NavigationView {
-            List {
-                ForEach(matcher.listens.recipes) { recipe in
-                    NavigationLink(destination: RecipeView(recipe: recipe)) {
-                        RecipeRow(recipe: recipe)
-                    }
-                }
-            }
-            .navigationTitle("My Recipes")
-        }
-    }
+         NavigationView {
+             ZStack {
+                 Color(hex: "2743A6") // Set the background color as a base layer
+                     .edgesIgnoringSafeArea(.all) // Make sure it covers the whole navigation area
+
+                 List {
+                     ForEach(matcher.listens.recipes) { recipe in
+                         NavigationLink(destination: RecipeView(recipe: recipe)) {
+                             RecipeRow(recipe: recipe)
+                         }
+                         .listRowBackground(Color.clear) // Clear the default List row color
+                     }
+                 }
+                 .navigationTitle("My Recipes")
+                 .background(Color.clear) // Clear the default background of the List
+             }
+         }
+     }
+       
 }
 
 struct RecipeRow: View {
@@ -50,6 +57,7 @@ struct RecipeRow: View {
                 .font(.caption)
                 .foregroundColor(.gray)
         }
+                
     }
 }
 

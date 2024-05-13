@@ -18,6 +18,10 @@
 		9D6B75F52BF24968001CAC28 /* HairyBikersLogo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B75F42BF24967001CAC28 /* HairyBikersLogo.svg */; };
 		9D6B75F72BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B75F62BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature */; };
 		9D6B75FB2BF26723001CAC28 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B75FA2BF26723001CAC28 /* Color.swift */; };
+		9D6B75FF2BF28ED3001CAC28 /* CookingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B75FE2BF28ED3001CAC28 /* CookingStep.swift */; };
+		9D6B76012BF28F32001CAC28 /* CookingGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B76002BF28F32001CAC28 /* CookingGuideView.swift */; };
+		9D6B76032BF2919C001CAC28 /* VoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B76022BF2919C001CAC28 /* VoiceController.swift */; };
+		9D6B76052BF29770001CAC28 /* CookingSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B76042BF29770001CAC28 /* CookingSteps.swift */; };
 		9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */; };
 		9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */; };
 		9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */; };
@@ -71,6 +75,10 @@
 		9D6B75F42BF24967001CAC28 /* HairyBikersLogo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HairyBikersLogo.svg; sourceTree = "<group>"; };
 		9D6B75F62BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheHairyBikersGoWestS01E01.shazamsignature; sourceTree = "<group>"; };
 		9D6B75FA2BF26723001CAC28 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9D6B75FE2BF28ED3001CAC28 /* CookingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingStep.swift; sourceTree = "<group>"; };
+		9D6B76002BF28F32001CAC28 /* CookingGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingGuideView.swift; sourceTree = "<group>"; };
+		9D6B76022BF2919C001CAC28 /* VoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceController.swift; sourceTree = "<group>"; };
+		9D6B76042BF29770001CAC28 /* CookingSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingSteps.swift; sourceTree = "<group>"; };
 		9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenView.swift; sourceTree = "<group>"; };
 		9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView2.swift; sourceTree = "<group>"; };
@@ -206,6 +214,7 @@
 				9D8B36852B9E3C75005B0C75 /* Matcher.swift */,
 				9D8B36872B9E3C8B005B0C75 /* Recipe.swift */,
 				9D21B9822BD6CCA10089D9F7 /* Listens.swift */,
+				9D6B75FE2BF28ED3001CAC28 /* CookingStep.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -216,6 +225,7 @@
 				9D8B368A2B9E3CB0005B0C75 /* MediaItemProperties.swift */,
 				9D8B368C2B9E3CF2005B0C75 /* Recipes.swift */,
 				9D6B75FA2BF26723001CAC28 /* Color.swift */,
+				9D6B76042BF29770001CAC28 /* CookingSteps.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,6 +252,7 @@
 				9D85E71F2BC47C0D00FEA9F1 /* EpisodeView2.swift */,
 				9DA35E2C2BD562B500825D59 /* StorageUIImage.swift */,
 				9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */,
+				9D6B76002BF28F32001CAC28 /* CookingGuideView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				9DBBBD392BD5A7B0006845EB /* FirebaseHelper.swift */,
+				9D6B76022BF2919C001CAC28 /* VoiceController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -525,15 +537,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6B76032BF2919C001CAC28 /* VoiceController.swift in Sources */,
 				9D8B368B2B9E3CB0005B0C75 /* MediaItemProperties.swift in Sources */,
+				9D6B75FF2BF28ED3001CAC28 /* CookingStep.swift in Sources */,
 				9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */,
 				9DBBBD3A2BD5A7B0006845EB /* FirebaseHelper.swift in Sources */,
 				9D8B36592B9E3BE5005B0C75 /* ContentView.swift in Sources */,
+				9D6B76052BF29770001CAC28 /* CookingSteps.swift in Sources */,
 				9D8B36822B9E3C48005B0C75 /* Episode.swift in Sources */,
 				9D8B368D2B9E3CF2005B0C75 /* Recipes.swift in Sources */,
 				9DA35E2D2BD562B500825D59 /* StorageUIImage.swift in Sources */,
 				9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */,
 				9D21B9832BD6CCA10089D9F7 /* Listens.swift in Sources */,
+				9D6B76012BF28F32001CAC28 /* CookingGuideView.swift in Sources */,
 				9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */,
 				9D8B36962B9E3D9D005B0C75 /* BlurView.swift in Sources */,
 				9D8B36942B9E3D8B005B0C75 /* CardView.swift in Sources */,
@@ -716,6 +732,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Motor Bites";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -750,6 +767,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Motor Bites";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -118,7 +118,7 @@ let sampleRecipe = Recipe(
     budget: 20.00,
     description: "Delicious Middle Eastern pie.",
     ingridients: ["Lamb", "Onion", "Pine Nuts"],
-    imageURL: URL(string: "gs://motorbites-1a543.appspot.com/syrian_flatbread_pizza_22452_16x9.jpg")!
+    imageURL: URL(string: "gs://motorbites-1a543.appspot.com/syrian_flatbread_pizza_22452_16x9.jpg")!, steps: CookingStep.allCookingSteps
 )
 
 struct EpisodeView1_Previews: PreviewProvider {
