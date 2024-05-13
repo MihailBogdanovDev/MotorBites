@@ -15,6 +15,8 @@
 		9D0294602BD4227A002B73F1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9D02945F2BD4227A002B73F1 /* FirebaseAnalytics */; };
 		9D21B9832BD6CCA10089D9F7 /* Listens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21B9822BD6CCA10089D9F7 /* Listens.swift */; };
 		9D21B9852BD6F64A0089D9F7 /* MyRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */; };
+		9D6B75F52BF24968001CAC28 /* HairyBikersLogo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B75F42BF24967001CAC28 /* HairyBikersLogo.svg */; };
+		9D6B75F72BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B75F62BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature */; };
 		9D85E71A2BBEDF8B00FEA9F1 /* ListenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */; };
 		9D85E71C2BBEF21100FEA9F1 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */; };
 		9D85E71E2BC46F9500FEA9F1 /* RecipeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */; };
@@ -35,7 +37,6 @@
 		9D8B36922B9E3D5D005B0C75 /* EpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36912B9E3D5D005B0C75 /* EpisodeListView.swift */; };
 		9D8B36942B9E3D8B005B0C75 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36932B9E3D8B005B0C75 /* CardView.swift */; };
 		9D8B36962B9E3D9D005B0C75 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B36952B9E3D9D005B0C75 /* BlurView.swift */; };
-		9D8B36992BA08E5D005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */; };
 		9DA35E2D2BD562B500825D59 /* StorageUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA35E2C2BD562B500825D59 /* StorageUIImage.swift */; };
 		9DBBBD3A2BD5A7B0006845EB /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBBBD392BD5A7B0006845EB /* FirebaseHelper.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,8 @@
 		9D02945C2BD421C0002B73F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D21B9822BD6CCA10089D9F7 /* Listens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listens.swift; sourceTree = "<group>"; };
 		9D21B9842BD6F64A0089D9F7 /* MyRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipesView.swift; sourceTree = "<group>"; };
+		9D6B75F42BF24967001CAC28 /* HairyBikersLogo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HairyBikersLogo.svg; sourceTree = "<group>"; };
+		9D6B75F62BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheHairyBikersGoWestS01E01.shazamsignature; sourceTree = "<group>"; };
 		9D85E7192BBEDF8B00FEA9F1 /* ListenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenView.swift; sourceTree = "<group>"; };
 		9D85E71B2BBEF21100FEA9F1 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		9D85E71D2BC46F9500FEA9F1 /* RecipeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView2.swift; sourceTree = "<group>"; };
@@ -86,7 +89,6 @@
 		9D8B36872B9E3C8B005B0C75 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		9D8B368A2B9E3CB0005B0C75 /* MediaItemProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemProperties.swift; sourceTree = "<group>"; };
 		9D8B368C2B9E3CF2005B0C75 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
-		9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */ = {isa = PBXFileReference; lastKnownFileType = file; name = TheHairyBikersGoWestS01E01.shazamsignature; path = "../../../Individual Project/Resources/TheHairyBikersGoWestS01E01.shazamsignature"; sourceTree = "<group>"; };
 		9D8B36912B9E3D5D005B0C75 /* EpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListView.swift; sourceTree = "<group>"; };
 		9D8B36932B9E3D8B005B0C75 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9D8B36952B9E3D9D005B0C75 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -218,8 +220,9 @@
 		9D8B368E2B9E3D14005B0C75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9D6B75F62BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature */,
+				9D6B75F42BF24967001CAC28 /* HairyBikersLogo.svg */,
 				9D02945A2BD41E47002B73F1 /* lambSfiha.jpg */,
-				9D8B368F2B9E3D32005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -390,7 +393,8 @@
 				9D8B365E2B9E3BE6005B0C75 /* Preview Assets.xcassets in Resources */,
 				9D02945D2BD421C0002B73F1 /* GoogleService-Info.plist in Resources */,
 				9D8B365B2B9E3BE6005B0C75 /* Assets.xcassets in Resources */,
-				9D8B36992BA08E5D005B0C75 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */,
+				9D6B75F52BF24968001CAC28 /* HairyBikersLogo.svg in Resources */,
+				9D6B75F72BF25833001CAC28 /* TheHairyBikersGoWestS01E01.shazamsignature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,7 @@ struct ListenView: View {
             }
             else{
                 // Background
-                Color.black.edgesIgnoringSafeArea(.all)
+                Color.white.edgesIgnoringSafeArea(.all)
                 
                 // Main button and text
                 VStack {
@@ -39,11 +39,11 @@ struct ListenView: View {
                        toggleListening()
                         
                     }) {
-                        Image(systemName: "waveform.path.ecg") // Replace with your own custom image
+                        Image( "HairyBikersLogo") // Replace with your own custom image
                             .font(.system(size: 50))
                             .foregroundColor(.white)
-                            .padding(60)
-                            .background(Color.black)
+                            .padding(10)
+                            .background(Color.white)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.gray, lineWidth: 1))
                             .shadow(color: .gray, radius: 10, x: 0, y: 4)
@@ -52,7 +52,7 @@ struct ListenView: View {
                     }
                     
                     Text("Tap to Shazam")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .padding(.top, 20)
                     Spacer()
                 }.ignoresSafeArea()
@@ -215,8 +215,8 @@ struct ContentListView: View {
             }
            
         }
-        .foregroundColor(.white)
-        .background(Color.black)
+        .foregroundColor(.black)
+        .background(Color.white)
     }
 }
 
