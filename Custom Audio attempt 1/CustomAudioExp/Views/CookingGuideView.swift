@@ -5,12 +5,25 @@ struct CookingGuideView: View {
     let steps: [CookingStep]
     @State private var currentStepIndex = 0
     @StateObject private var voiceController = VoiceController()
+    @State private var player: AVPlayer?
+
 
     var body: some View {
         VStack {
             if let videoURL = steps[currentStepIndex].videoURL {
-                VideoPlayer(player: AVPlayer(url: videoURL))
-                    .frame(height: 200)
+                VideoPlayer(player: player)
+                    .onAppear {
+                                         // Initialize the player with the new video URL
+                                         self.player = AVPlayer(url: videoURL)
+                                         self.player?.play()  // Start playing automatically
+                                     }
+                                     .frame(height: 200)
+                                     .onChange(of: currentStepIndex) { _ in
+                                         // Update the player when the step changes
+                                         guard let newURL = steps[currentStepIndex].videoURL else { return }
+                                         self.player = AVPlayer(url: newURL)
+                                         self.player?.play()
+                                     }
             }
 
             Text(steps[currentStepIndex].instruction)
@@ -50,12 +63,14 @@ struct CookingGuideView: View {
         if currentStepIndex < steps.count - 1 {
             currentStepIndex += 1
         }
+        print("next")
     }
 
     private func goToPreviousStep() {
         if currentStepIndex > 0 {
             currentStepIndex -= 1
         }
+        print("back")
     }
 
     private func handleVoiceCommand(_ command: String) {
