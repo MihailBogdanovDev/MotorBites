@@ -55,7 +55,10 @@ struct CookingGuideView: View {
                 }
                 .onChange(of: voiceController.recognizedText) { newValue in
                     // Check for "Next" or "Back" and update `currentStepIndex` accordingly
-                    handleVoiceCommand(newValue.lowercased())
+                    if !newValue.isEmpty {
+                          handleVoiceCommand(newValue.lowercased())
+                          voiceController.recognizedText = "" // Reset the recognized text after handling
+                      }
                 }
     }
     
@@ -74,6 +77,7 @@ struct CookingGuideView: View {
     }
 
     private func handleVoiceCommand(_ command: String) {
+        print(command)
         if command.contains("next") {
             goToNextStep()
         } else if command.contains("back") {

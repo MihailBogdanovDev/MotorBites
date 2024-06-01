@@ -9,6 +9,7 @@ target 'CustomAudioExp' do
 
   pod 'FirebaseUI'
   pod 'SDWebImageSwiftUI'
+  pod 'Alamofire', '~> 5.4'
 
   target 'CustomAudioExpTests' do
     inherit! :search_paths

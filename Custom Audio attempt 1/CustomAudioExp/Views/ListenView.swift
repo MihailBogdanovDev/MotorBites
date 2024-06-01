@@ -51,7 +51,7 @@ struct ListenView: View {
                             .rotationEffect(.degrees(animationAmount)) // Rotate button when listening
                     }
                     
-                    Text("Tap to Shazam")
+                    Text("Tap to Listen")
                         .foregroundColor(.black)
                         .padding(.top, 20)
                     Spacer()

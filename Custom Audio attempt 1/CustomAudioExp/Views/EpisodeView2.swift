@@ -117,7 +117,7 @@ let sampleRecipe = Recipe(
     time: "1h30m",
     budget: 20.00,
     description: "Delicious Middle Eastern pie.",
-    ingridients: ["Lamb", "Onion", "Pine Nuts"],
+    ingridients: Ingredient.lambSfiha,
     imageURL: URL(string: "gs://motorbites-1a543.appspot.com/syrian_flatbread_pizza_22452_16x9.jpg")!, steps: CookingStep.allCookingSteps
 )
 
