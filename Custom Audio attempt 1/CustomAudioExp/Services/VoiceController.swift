@@ -32,6 +32,7 @@ class VoiceController: ObservableObject {
 
                 if error != nil || result?.isFinal == true {
                     strongSelf.stopListening()
+                    strongSelf.recognizedText = ""
                     try? strongSelf.startListening() // Restart listening immediately
                 }
             }

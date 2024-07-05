@@ -9,6 +9,7 @@ struct MapView: View {
     @State private var userHasMovedMap = false  // New state to track user interaction
 
     var body: some View {
+        Text(ingredient.name)
         Map(coordinateRegion: $region, showsUserLocation: true, annotationItems: places) { place in
             MapMarker(coordinate: place.coordinate, tint: .blue)
         }

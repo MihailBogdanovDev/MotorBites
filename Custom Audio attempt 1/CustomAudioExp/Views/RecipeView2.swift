@@ -67,7 +67,9 @@ struct RecipeView: View {
                                     self.selectedIngredient = ingredient
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                           self.showMapView = true
-                                    };                                    print(selectedIngredient)
+                                    };
+                                    print("SELECTED INGRIDIENT: ")
+                                    print(selectedIngredient)
                                 }
                         }
                     }
@@ -94,12 +96,11 @@ struct RecipeView: View {
                     CookingGuideView(steps: recipe.steps)
                 }
                 .sheet(isPresented: $showMapView) {
-                    
-                    if let ingredient = selectedIngredient {
-                        MapView(locationManager: LocationManager(), ingredient: ingredient)
+                    if (selectedIngredient != nil) {
+                        MapView(locationManager: LocationManager(), ingredient: selectedIngredient ?? Ingredient(name: "Lamb Mince", types: [IngredientType.generic, IngredientType.meat, IngredientType.middleEastern]))
                     }
                     else{
-                        MapView(locationManager: LocationManager(), ingredient: Ingredient(name: "Chicken", types: [IngredientType.generic]))
+                        MapView(locationManager: LocationManager(), ingredient: Ingredient(name: "Lamb Mince", types: [IngredientType.generic, IngredientType.meat, IngredientType.middleEastern]))
                     }
                 }
             }
